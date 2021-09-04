@@ -1,7 +1,7 @@
 using System;
 using UnityEngine.Serialization;
 
-namespace MenuManagement.Data
+namespace Mario.Data
 {
     [Serializable]
     public class SaveData

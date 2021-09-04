@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MenuManagement
+namespace Mario
 {
     public class MenuManager : MonoBehaviour
     {

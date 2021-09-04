@@ -11,10 +11,13 @@ namespace Mario
 
         private void Update()
         {
-            var currentPos = transform.position;
-            transform.position = new Vector3(Mathf.Round(currentPos.x / gridScaleX) * gridScaleX,
-                Mathf.Round(currentPos.y / gridScaleY) * gridScaleY,
-                0);
+            if (Application.isEditor && !Application.isPlaying)
+            {
+                var currentPos = transform.position;
+                transform.position = new Vector3(Mathf.Round(currentPos.x / gridScaleX) * gridScaleX,
+                    Mathf.Round(currentPos.y / gridScaleY) * gridScaleY,
+                    0);
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MenuManagement.Data
+namespace Mario.Data
 {
     public class DataManager : MonoBehaviour
     {

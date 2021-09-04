@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MenuManagement
+namespace Mario
 {
     public class GameMenu : Menu<GameMenu>
     {

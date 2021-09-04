@@ -2,7 +2,7 @@ using UnityEngine;
 using LevelManagement;
 using LevelManagement.Utilities;
 
-namespace MenuManagement
+namespace Mario
 {
     public class LevelCompleteMenu : GameOverMenu
     {

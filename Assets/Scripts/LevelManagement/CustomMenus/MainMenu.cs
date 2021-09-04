@@ -1,11 +1,6 @@
-using System.Collections;
-using LevelManagement;
-using LevelManagement.Utilities;
-using MenuManagement.Data;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace MenuManagement
+namespace Mario
 {
     public class MainMenu : Menu<MainMenu>
     {
@@ -13,5 +8,17 @@ namespace MenuManagement
         {
             Debug.Log("Level selector");
         }
+
+        public void OnSettingsPressed()
+        {
+            Debug.Log("Settings");
+            SettingsMenu.Open();
+        }
+        
+        public void OnQuitPressed()
+        {
+            Application.Quit();
+        }
+        
     }
 }

@@ -1,8 +1,8 @@
+using Mario.Data;
 using UnityEngine;
 using UnityEngine.UI;
-using MenuManagement.Data;
 
-namespace MenuManagement
+namespace Mario
 {
     public class SettingsMenu : Menu<SettingsMenu>
     {

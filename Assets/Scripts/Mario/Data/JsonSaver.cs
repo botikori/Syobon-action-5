@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace MenuManagement.Data
+namespace Mario.Data
 {
     public class JsonSaver
     {

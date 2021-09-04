@@ -2,7 +2,7 @@ using LevelManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace MenuManagement
+namespace Mario
 {
     public class PauseMenu : Menu<PauseMenu>
     {

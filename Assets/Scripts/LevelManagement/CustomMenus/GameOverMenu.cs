@@ -1,7 +1,7 @@
 using LevelManagement;
 using UnityEngine;
 
-namespace MenuManagement
+namespace Mario
 {
     public class GameOverMenu : Menu<GameOverMenu>
     {

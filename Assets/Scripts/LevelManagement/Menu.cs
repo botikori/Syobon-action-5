@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MenuManagement
+namespace Mario
 {
     [RequireComponent(typeof(Canvas))]
     public abstract class Menu : MonoBehaviour

@@ -1,4 +1,4 @@
-namespace MenuManagement
+namespace Mario
 {
     public class CreditsMenu : Menu<CreditsMenu>
     {
