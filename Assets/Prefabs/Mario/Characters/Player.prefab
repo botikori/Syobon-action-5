@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
+  jumpHeight: 13
+  jumpDelay: 0.5
+  jumpSound: {fileID: 8300000, guid: 835aedb3a0f4228cba923a3570997575, type: 3}
+  jumpMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1001 &8141033405046053656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,7 +44,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6770768356329178963, guid: 7c79d5563871da0d093a658b1d684c00, type: 3}
       propertyPath: m_Offset.y
-      value: -0.428
+      value: -0.423
       objectReference: {fileID: 0}
     - target: {fileID: 6770768356329178963, guid: 7c79d5563871da0d093a658b1d684c00, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x

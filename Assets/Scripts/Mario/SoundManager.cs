@@ -28,16 +28,23 @@ namespace Mario
             effectsSource.volume = volume;
         }
         
-        public void Play(AudioClip clip)
+        public void PlaySound(AudioClip clip)
         {
-            effectsSource.clip = clip;
-            effectsSource.Play();
+            if (clip != null)
+            {
+                effectsSource.clip = clip;
+                effectsSource.Play();
+            }
+            
         }
         
         public void PlayMusic(AudioClip clip)
         {
-            musicSource.clip = clip;
-            musicSource.Play();
+            if (clip != null)
+            {
+                musicSource.clip = clip;
+                musicSource.Play();
+            }
         }
 
         public void StopMusic()

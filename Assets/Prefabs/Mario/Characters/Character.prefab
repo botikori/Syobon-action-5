@@ -20,7 +20,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1001 &272077213044669472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 2441a6b046a3ca6bebee8a4cab1f4e51, type: 2}
     - target: {fileID: 7719687204837633123, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_RootOrder
       value: 0
