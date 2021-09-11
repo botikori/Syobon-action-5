@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6710756851178399170}
   - component: {fileID: 5068399451077519599}
   m_Layer: 0
-  m_Name: SnappedGameObject
+  m_Name: Snapped Game Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

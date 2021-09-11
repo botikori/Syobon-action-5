@@ -9,7 +9,7 @@ namespace Mario.Data
     {
         private static readonly string _fileName = "save.json";
 
-        public static string GetSavePath()
+        private static string GetSavePath()
         {
             return Application.persistentDataPath + "/" + _fileName;
         }

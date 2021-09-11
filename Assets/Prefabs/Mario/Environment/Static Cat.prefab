@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8761411393498752728, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
       propertyPath: m_Name
-      value: StaticCat
+      value: Static Cat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}

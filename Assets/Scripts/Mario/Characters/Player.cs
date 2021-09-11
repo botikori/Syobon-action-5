@@ -15,17 +15,22 @@ namespace Mario.Characters
         private bool _canJump = true;
         private Rigidbody2D _rigidbody;
         private BoxCollider2D _boxCollider;
+        private Animator _animator;
+        private SpriteRenderer _spriteRenderer;
 
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
             _boxCollider = GetComponent<BoxCollider2D>();
+            _animator = GetComponent<Animator>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         private void Update()
         {
             Move();
             Jump();
+            _animator.SetBool("IsGrounded", IsGrounded());
         }
         
         #region Jump
@@ -51,8 +56,8 @@ namespace Mario.Characters
         
         private bool IsGrounded()
         {
-            RaycastHit2D raycastHit = Physics2D.BoxCast(_boxCollider.bounds.center, _boxCollider.bounds.size, 0, Vector2.down, 0.1f, jumpMask);
-
+            RaycastHit2D raycastHit = Physics2D.BoxCast(_boxCollider.bounds.center,
+                _boxCollider.bounds.size, 0, Vector2.down, 0.1f, jumpMask);
             return raycastHit.collider != null;
         }
         #endregion
@@ -60,6 +65,22 @@ namespace Mario.Characters
         private void Move()
         {
             float horizontal = Input.GetAxis("Horizontal");
+            
+            _animator.SetBool("IsMoving", (Mathf.Abs(horizontal) > 0.001) ? true : false);
+            
+            #region FlipSprite
+
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                _spriteRenderer.flipX = true;
+            }
+            
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                _spriteRenderer.flipX = false;
+            }
+
+            #endregion
 
             transform.position += new Vector3(horizontal * moveSpeed * Time.deltaTime, 0, 0);
         }
