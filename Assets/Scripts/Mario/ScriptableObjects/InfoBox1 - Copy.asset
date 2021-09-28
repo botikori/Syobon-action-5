@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e024c3cd534f56b95a705d903241adda, type: 3}
-  m_Name: InfoBox1
+  m_Name: InfoBox1 - Copy
   m_EditorClassIdentifier: 
   title: Welcome!
   text: Alulululu!

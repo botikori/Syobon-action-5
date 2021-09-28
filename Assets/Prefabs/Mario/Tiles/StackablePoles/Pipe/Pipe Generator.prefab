@@ -1,42 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!61 &6786930388543847283
-BoxCollider2D:
+--- !u!114 &7934942340677819847
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525851496358736385}
+  m_GameObject: {fileID: 4061278758089291591}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
---- !u!1001 &9140893375990093017
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521ccc28a84e47f994c5ed0230970008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poleBottom: {fileID: -2561238907299680598, guid: 5a7cf4faea31fd5f48cd9e919a9129ee, type: 3}
+  poleMiddle: {fileID: -2561238907299680598, guid: 5a7cf4faea31fd5f48cd9e919a9129ee, type: 3}
+  poleTop: {fileID: -7347277767829423379, guid: 5a7cf4faea31fd5f48cd9e919a9129ee, type: 3}
+  topGameObject: {fileID: 1604060064373835110, guid: 6f3afd3b24e8d00ec9cde006176fbfbd, type: 3}
+  poleGameObject: {fileID: 7435334332845047300, guid: 3c04547f85699bb21b0883c2436f6581, type: 3}
+  poleHeight: 2
+--- !u!1001 &4740679336889012639
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8830424927802875524, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1583908643573987514, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -83,12 +71,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8761411393498752728, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
       propertyPath: m_Name
-      value: CollisionGameObject
+      value: Pipe Generator
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
---- !u!1 &525851496358736385 stripped
+--- !u!1 &4061278758089291591 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8761411393498752728, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
-  m_PrefabInstance: {fileID: 9140893375990093017}
+  m_PrefabInstance: {fileID: 4740679336889012639}
   m_PrefabAsset: {fileID: 0}

@@ -1,23 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &6935457382695578528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5384674556964164563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521ccc28a84e47f994c5ed0230970008, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poleBottom: {fileID: 0}
-  poleMiddle: {fileID: 0}
-  poleTop: {fileID: 0}
-  poleHeight: 10
-  isDrawn: 1
---- !u!1001 &5617686229551096274
+--- !u!1001 &6326747425133577064
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -26,7 +9,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 525851496358736385, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_Name
-      value: Flag Pole
+      value: Pole Part
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_Size.x
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7719687204837633123, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_RootOrder
@@ -72,10 +91,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8912339198813566373, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 9174028862766081554, guid: 9b58f0b4b1bb94ecb878514e0257d69f, type: 3}
+    - target: {fileID: 8912339198813566373, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
---- !u!1 &5384674556964164563 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 525851496358736385, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
-  m_PrefabInstance: {fileID: 5617686229551096274}
-  m_PrefabAsset: {fileID: 0}
