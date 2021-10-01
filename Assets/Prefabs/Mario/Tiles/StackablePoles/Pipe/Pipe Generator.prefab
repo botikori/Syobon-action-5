@@ -15,7 +15,7 @@ MonoBehaviour:
   poleBottom: {fileID: -2561238907299680598, guid: 5a7cf4faea31fd5f48cd9e919a9129ee, type: 3}
   poleMiddle: {fileID: -2561238907299680598, guid: 5a7cf4faea31fd5f48cd9e919a9129ee, type: 3}
   poleTop: {fileID: -7347277767829423379, guid: 5a7cf4faea31fd5f48cd9e919a9129ee, type: 3}
-  topGameObject: {fileID: 1604060064373835110, guid: 6f3afd3b24e8d00ec9cde006176fbfbd, type: 3}
+  topGameObject: {fileID: 7625349308851929723, guid: 6f3afd3b24e8d00ec9cde006176fbfbd, type: 3}
   poleGameObject: {fileID: 7435334332845047300, guid: 3c04547f85699bb21b0883c2436f6581, type: 3}
   poleHeight: 2
 --- !u!1001 &4740679336889012639
@@ -25,6 +25,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8830424927802875524, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8830424927802875524, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2561238907299680598, guid: 5a7cf4faea31fd5f48cd9e919a9129ee, type: 3}
+    - target: {fileID: -8830424927802875524, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1583908643573987514, guid: 529c526ef77077a73af3ddce1a0197d7, type: 3}
       propertyPath: m_RootOrder
       value: 0

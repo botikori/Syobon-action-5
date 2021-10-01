@@ -8,23 +8,25 @@ namespace Mario.Characters
         private Rigidbody2D _rigidbody2D;
         private BoxCollider2D _boxCollider;
 
-        protected Rigidbody2D Rigidbody2D
+        public Rigidbody2D Rigidbody2D
         {
             get => _rigidbody2D;
             set => _rigidbody2D = value;
         }
-        protected BoxCollider2D BoxCollider
+
+        public BoxCollider2D BoxCollider
         {
             get => _boxCollider;
             set => _boxCollider = value;
         }
-        
-        [Header("Gravity modifier")]
-        [SerializeField] private float fallMultiplier = 2.5f;
+
+        [Header("Gravity modifier")] [SerializeField]
+        private float fallMultiplier = 2.5f;
+
         [SerializeField] private float lowJumpMultiplier = 2f;
-        
-        [Header("Grounded mask")]
-        [SerializeField] private LayerMask jumpLayer;
+
+        [Header("Grounded mask")] [SerializeField]
+        private LayerMask jumpLayer;
 
         public virtual void Awake()
         {
@@ -32,7 +34,7 @@ namespace Mario.Characters
             _boxCollider = GetComponent<BoxCollider2D>();
         }
 
-        public virtual void Update()
+        public virtual void FixedUpdate()
         {
             ModifyGravity();
         }
@@ -41,17 +43,21 @@ namespace Mario.Characters
         {
             if (_rigidbody2D.velocity.y < 0)
             {
-                _rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+                _rigidbody2D.gravityScale = fallMultiplier;
             }
-            else if (_rigidbody2D.velocity.y >= 0 && !Input.GetKey(KeyCode.UpArrow) && !IsGrounded())
+            else if (_rigidbody2D.velocity.y > 0 && !Input.GetKey(KeyCode.UpArrow) && !IsGrounded())
             {
-                _rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+                _rigidbody2D.gravityScale = lowJumpMultiplier;
+            }
+            else
+            {
+                _rigidbody2D.gravityScale = 1.0f;
             }
         }
-        
+
         public bool IsGrounded()
         {
-            RaycastHit2D raycastHit2D = Physics2D.BoxCast(_boxCollider.bounds.center, 
+            RaycastHit2D raycastHit2D = Physics2D.BoxCast(_boxCollider.bounds.center,
                 _boxCollider.bounds.size, 0f, Vector2.down, 0.1f, jumpLayer);
             return raycastHit2D.collider != null;
         }
