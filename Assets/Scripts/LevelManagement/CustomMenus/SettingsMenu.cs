@@ -2,7 +2,7 @@ using Mario.Data;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Mario
+namespace LevelManagement.CustomMenus
 {
     public class SettingsMenu : Menu<SettingsMenu>
     {

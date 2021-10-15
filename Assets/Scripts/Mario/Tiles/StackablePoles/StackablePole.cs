@@ -1,21 +1,17 @@
+using Mario.ScriptableObjects;
 using UnityEngine;
 
-namespace Mario.Tiles
+namespace Mario.Tiles.StackablePoles
 {
     public class StackablePole : MonoBehaviour
     {
-        [Header("Pole sprites")]
-        [SerializeField] private Sprite poleBottom;
-        [SerializeField] private Sprite poleMiddle;
-        [SerializeField] private Sprite poleTop;
+        [Header("Height settings")]
+        [SerializeField] private int poleHeight = 5;
+        [SerializeField] private float poleOffset = 0.0f;
         
-        [Header("Pole game objects")]
-        [SerializeField] private GameObject topGameObject;
-        [SerializeField] private GameObject poleGameObject;
+        [Header("Pole object")]
+        [SerializeField] private PoleProperties poleProperties;
         
-        [Header("Pole height")]
-        [SerializeField] private int poleHeight;
-
         private void Awake()
         {
             DrawPole(poleHeight);
@@ -32,33 +28,22 @@ namespace Mario.Tiles
         {
             for (int i = 0; i < height; i++)
             {
-                if (i == 0)
+                if (i == height - 1)
                 {
-                    InstantiatePole(poleGameObject, i, poleBottom);
-                }
-                else if (i == height - 1)
-                {
-                    InstantiatePole(topGameObject, i, poleTop);
+                    InstantiatePole(poleProperties.poleTop, i);
                 }
                 else
                 {
-                    InstantiatePole(poleGameObject, i, poleMiddle);
+                    InstantiatePole(poleProperties.poleBottom, i);
                 }
             }
         }
 
-        private void InstantiatePole(GameObject instantiateGameObject, int height, Sprite sprite)
+        private void InstantiatePole(GameObject instantiateGameObject, int height)
         {
             GameObject polePart = Instantiate(instantiateGameObject,
-                new Vector3(transform.position.x, transform.position.y + height, transform.position.z),
+                new Vector3(transform.position.x, transform.position.y + (height + poleOffset), transform.position.z),
                 Quaternion.identity, transform);
-
-            SpriteRenderer spriteRenderer = polePart.GetComponent<SpriteRenderer>();
-
-            if (spriteRenderer != null)
-            {
-                spriteRenderer.sprite = sprite;
-            }
         }
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Mario
+namespace LevelManagement.CustomMenus
 {
     public class MainMenu : Menu<MainMenu>
     {

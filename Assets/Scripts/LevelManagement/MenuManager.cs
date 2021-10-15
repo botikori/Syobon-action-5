@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using LevelManagement.CustomMenus;
 using UnityEngine;
 
-namespace Mario
+namespace LevelManagement
 {
     public class MenuManager : MonoBehaviour
     {

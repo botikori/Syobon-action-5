@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e024c3cd534f56b95a705d903241adda, type: 3}
-  m_Name: InfoBox1 - Copy
+  m_Script: {fileID: 11500000, guid: e5b0b8577a114229b3c09f1bc6b0e6a4, type: 3}
+  m_Name: Flag
   m_EditorClassIdentifier: 
-  title: Welcome!
-  text: Alulululu!
+  poleTop: {fileID: 6811611677356026506, guid: a29aabb4791132f5f82651c4b5e9e72c, type: 3}
+  poleBottom: {fileID: 8227694461872869005, guid: 69b0483d22ab637b78b12e4019638f22, type: 3}
+  hasTop: 1

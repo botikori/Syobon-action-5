@@ -1,4 +1,4 @@
-namespace Mario
+namespace LevelManagement.CustomMenus
 {
     public class CreditsMenu : Menu<CreditsMenu>
     {

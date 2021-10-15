@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6945586400296127493
+--- !u!1001 &4261338136336936238
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,13 +11,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe Bottom
       objectReference: {fileID: 0}
-    - target: {fileID: 525851496358736385, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_Size.x
-      value: 2
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_Size.y

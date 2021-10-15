@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class DontDestroyOnLoad : MonoBehaviour
+namespace LevelManagement.Utilities
 {
-    private void Awake()
+    public class DontDestroyOnLoad : MonoBehaviour
     {
-        transform.SetParent(null);
-        DontDestroyOnLoad(gameObject);
+        private void Awake()
+        {
+            transform.SetParent(null);
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }

@@ -1,8 +1,6 @@
-using LevelManagement;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-namespace Mario
+namespace LevelManagement.CustomMenus
 {
     public class PauseMenu : Menu<PauseMenu>
     {

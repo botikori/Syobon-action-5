@@ -1,8 +1,4 @@
-using UnityEngine;
-using LevelManagement;
-using LevelManagement.Utilities;
-
-namespace Mario
+namespace LevelManagement.CustomMenus
 {
     public class LevelCompleteMenu : GameOverMenu
     {

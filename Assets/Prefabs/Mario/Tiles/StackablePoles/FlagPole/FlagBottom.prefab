@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6326747425133577064
+--- !u!1001 &8458489776581934220
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 525851496358736385, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_Name
-      value: Pole Part
+      value: FlagBottom
       objectReference: {fileID: 0}
     - target: {fileID: 6786930388543847283, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_Size.x
@@ -94,7 +94,7 @@ PrefabInstance:
     - target: {fileID: 8912339198813566373, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 9174028862766081554, guid: 9b58f0b4b1bb94ecb878514e0257d69f, type: 3}
+      objectReference: {fileID: -4380001222995079601, guid: 9b58f0b4b1bb94ecb878514e0257d69f, type: 3}
     - target: {fileID: 8912339198813566373, guid: 250f44107cb7250059382fb1118d4c40, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1

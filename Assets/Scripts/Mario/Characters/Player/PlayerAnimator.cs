@@ -6,6 +6,7 @@ namespace Mario.Characters.Player
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(SpriteRenderer))]
     [RequireComponent(typeof(PlayerController))]
+    [RequireComponent(typeof(Player))]
     public class PlayerAnimator : MonoBehaviour
     {
         private SpriteRenderer _spriteRenderer;
