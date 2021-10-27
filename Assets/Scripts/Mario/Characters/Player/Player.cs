@@ -11,15 +11,22 @@ namespace Mario.Characters.Player
         private void Start()
         {
             _pipe = FindObjectOfType<Pipe>();
+
+            if (_pipe != null)
+            {
+                _pipe.PipeEntered += OnPipeEntered;
+                _pipe.PipeExited += OnPipeExited;
+            }
             
-            _pipe.PipeEntered += OnPipeEntered;
-            _pipe.PipeExited += OnPipeExited;
         }
 
         private void OnDestroy()
         {
-            _pipe.PipeEntered -= OnPipeEntered;
-            _pipe.PipeExited -= OnPipeExited;
+            if (_pipe != null)
+            {
+                _pipe.PipeEntered -= OnPipeEntered;
+                _pipe.PipeExited -= OnPipeExited;
+            }
         }
 
         private void OnPipeEntered(Pipe pipe)

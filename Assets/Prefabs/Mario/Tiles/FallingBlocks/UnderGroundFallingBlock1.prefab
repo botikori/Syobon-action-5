@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3102048258266105326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062907912379184362, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2183998196294610220, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6002908592885711585, guid: 63e873b00a683167799581f8cb1f1085, type: 3}
+    - target: {fileID: 4310480009662571514, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310480009662571514, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110568804684950152, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}
+      propertyPath: m_Name
+      value: UnderGroundFallingBlock1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73f50a8faa5769bb78ebd93ad1c2cfcc, type: 3}

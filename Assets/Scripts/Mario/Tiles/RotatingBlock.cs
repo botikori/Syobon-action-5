@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Mario.Tiles
 {
-    public class RotatingBlock : MonoBehaviour
+    public class RotatingBlock : Tile
     {
         [Header("Degree settings")] 
         [SerializeField] private float degreesPerSecond = 20;

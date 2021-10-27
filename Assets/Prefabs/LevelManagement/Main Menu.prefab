@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit game
+  m_Text: Prece quit
 --- !u!114 &1977270333684328416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter settings
+  m_Text: Prece settings
 --- !u!114 &3018159611316590952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,7 +416,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level selector
+  m_Text: Precze level selector
 --- !u!114 &8250476831978687346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,7 +562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6562021886686870379, guid: 735d7e8d022fe6e7ebc456821c0f58ef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6562021886686870379, guid: 735d7e8d022fe6e7ebc456821c0f58ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

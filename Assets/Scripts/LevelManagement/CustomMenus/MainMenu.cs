@@ -1,3 +1,4 @@
+using LevelManagement.CustomMenus.LevelSelector;
 using UnityEngine;
 
 namespace LevelManagement.CustomMenus
@@ -7,6 +8,7 @@ namespace LevelManagement.CustomMenus
         public void OnLevelSelectorPressed()
         {
             Debug.Log("Level selector");
+            SelectLevelMenu.Open();
         }
 
         public void OnSettingsPressed()

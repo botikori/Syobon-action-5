@@ -1,3 +1,5 @@
+using LevelManagement.Levels;
+
 namespace LevelManagement.CustomMenus
 {
     public class LevelCompleteMenu : GameOverMenu

@@ -219,6 +219,7 @@ MonoBehaviour:
   - {fileID: 4289723959950030034, guid: a47ed8914b8cb377db2e725647d26385, type: 3}
   - {fileID: 5747064250735620485, guid: a5d09588d699f2776b9a6fbb06c655b3, type: 3}
   - {fileID: 3615478684582018112, guid: 61ff1a77adf13dac09eb76d3e57d6cf9, type: 3}
+  - {fileID: 2626661971044229286, guid: 4ee54367bc1c446aa9a2df111acf31c5, type: 3}
   menuParent: {fileID: 0}
 --- !u!4 &745723822
 Transform:

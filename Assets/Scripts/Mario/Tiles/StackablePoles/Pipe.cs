@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Mario.Tiles.StackablePoles
 {
-    public class Pipe : MonoBehaviour
+    public class Pipe : Tile
     {
         [SerializeField] private bool canGoDown;
         [SerializeField] private string sceneToLoad;
@@ -11,20 +11,24 @@ namespace Mario.Tiles.StackablePoles
         public event Action<Pipe> PipeEntered;
         public event Action PipeExited;
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private void OnPlayerEnter()
         {
-            if (other.CompareTag("Player") && PipeEntered != null)
+            if (PipeEntered == null)
             {
-                PipeEntered.Invoke(this);
+                return;
             }
+
+            PipeEntered.Invoke(this);
         }
 
-        private void OnTriggerExit2D(Collider2D other)
+        private void OnPlayerExit()
         {
-            if (other.CompareTag("Player") && PipeExited != null)
+            if (PipeExited == null)
             {
-                PipeExited.Invoke();
+                return;
             }
+
+            PipeExited.Invoke();
         }
     }
 }

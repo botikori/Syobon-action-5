@@ -2,7 +2,7 @@ using LevelManagement.CustomMenus;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace LevelManagement
+namespace LevelManagement.Levels
 {
     public static class LevelLoader
     {
